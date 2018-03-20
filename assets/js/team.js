@@ -16,6 +16,7 @@ function showInfo(data) {
 	var picURL = [];
 	var memName = []; 
 	var memBio = [];
+	var memRole = [];
 	var gitURL = []; 
 	var linkedInURL = [];
 	var memEmail = [];
@@ -28,6 +29,7 @@ function showInfo(data) {
 	while (data[index] != null) {
 		picURL[index] = data[index].Picture_URL;
 		memName[index] = data[index].Member_Name;
+		memRole[index] = data[index].Member_Role;
 		memBio[index] = data[index].Member_Bio;
 		gitURL[index] = data[index].Github_URL;
 		linkedInURL[index] = data[index].LinkedIn_URL;
@@ -44,7 +46,9 @@ function showInfo(data) {
 		+ picURL[index]
 		+ '" style="length: 256px; width: 256px" alt="" /></span><h2>'
 		+ memName[index]
-		+ '</h2><p class="biography">'
+		+ '</h2><h3>'
+		+ memRole[index]
+		+ '</h3><p class="biography">'
 		+ memBio[index]
 		+ '</p><p><a href="'
 		+ gitURL[index]

@@ -13,6 +13,7 @@ window.addEventListener('DOMContentLoaded', init)	// Calls method init when Shee
 
 // Method that gets called when data has been pulled from Google Sheets
 function showInfo(data) {
+	var projLogo = [];
 	var projTitle = [];
 	var devpostURL = []; 
 	var madeFor = [];
@@ -26,6 +27,7 @@ function showInfo(data) {
 	//Builds the Forms and Addresses arrays using the Google Sheets Data
 	//  var[index] = data[index]<COL_NAME>
 	while (data[index] != null) {
+		projLogo[index] = data[index].Project_Logo;
 		projTitle[index] = data[index].Project_Title;
 		devpostURL[index] = data[index].Devpost_URL;
 		madeFor[index] = data[index].made_for_Hackathon;
@@ -39,7 +41,10 @@ function showInfo(data) {
 		link = "";
 		link = webURL[index];
 
-		htmlContent += '<p><b><a href="'
+		htmlContent += '<span><img src="'
+		+ projLogo[index]
+		+ '" style="length: 256px; width: 256px; background: rgba(255, 255, 255, .9); border-radius:10%; overflow:hidden; padding: 10px 10px 10px 10px;" alt="" /></span>' 
+		+ '<p><b><a href="'
 		+ devpostURL[index]
 		+ '" target="_blank">'
 		+ projTitle[index]

@@ -50,15 +50,15 @@ function showInfo(data) {
 		+ memRole[index]
 		+ '</h3><p class="biography">'
 		+ memBio[index]
-		+ '</p><p><a href="'
-		+ gitURL[index]
-		+ '" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="'
+		+ '<ul><a href="'
+		+ gitURL[index] 
+		+ '" class="icon fa-github alt"></a><a href="'
 		+ linkedInURL[index]
-		+ '" target=_blank">LinkedIn</a>&nbsp;&nbsp;&nbsp<a href="' 
+		+ '" class="icon fa-linkedin alt"></a><a href="'
 		+ memEmail[index]
-		+ '">Email</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="'
+		+ '" class="icon fa-envelope alt"></a><a href="'
 		+ resumeURL[index]
-		+ '" target="_blank">Resume</a></p><br><br>';
+		+ '" class="icon fa-file alt"></a></ul></p><br><br>';
 
 
 		index++;

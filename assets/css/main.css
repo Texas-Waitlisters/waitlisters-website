@@ -1724,6 +1724,12 @@
 			text-align: justify;
 		}
 
+		p.biography {
+			padding-left: 100px;
+			padding-right: 100px;
+	        text-align: center;
+	    }
+
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.5;
@@ -3152,6 +3158,8 @@
 					display: block;
 					margin: 0 auto;
 					max-width: 75%;
+					height: 320px;
+					width: 320px;
 				}
 
 		@media screen and (max-width: 1280px) {
@@ -3853,3 +3861,4 @@
 			}
 
 		}
+

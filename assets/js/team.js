@@ -35,6 +35,7 @@ function showInfo(data) {
 		linkedInURL[index] = data[index].LinkedIn_URL;
 		memEmail[index] = data[index].Member_Email;
 		resumeURL[index] = data[index].Resume_URL;
+		webURL[index] = data[index].Web_URL;
 
 
 		// Writes HTML code based on Form responses
@@ -58,7 +59,9 @@ function showInfo(data) {
 		+ memEmail[index]
 		+ '" class="icon fa-envelope alt"></a><a href="'
 		+ resumeURL[index]
-		+ '" class="icon fa-file alt"></a></ul></p><br><br>';
+		+ '" class="icon fa-file alt"></a><a href="'
+		+ webURL[index]
+		+ '" class="icon fa-globe alt"></a></ul></p><br><br>';
 
 
 		index++;

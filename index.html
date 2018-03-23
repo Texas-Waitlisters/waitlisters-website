@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css"/>
-    <script type="text/javascript" src="http://www.texasacm.org/assets/js/tabletop.js"></script>
+    <script type="text/javascript" src="assets/js/tabletop.js"></script>
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <noscript>
@@ -74,6 +74,7 @@
 							<li><a href="projects.html">Projects</a></li>
 							<li><a href="pc.html">Prog Comp</a></li>
 							<li><a href="sec.html">Cyber Security</a></li>
+							<li><a href="sponsors.html">Sponsors</a></li>
 							<!-- <li><a href="blog.html">Blog</a></li> -->
 						</ul>
 					</nav>
@@ -129,7 +130,7 @@
 									</li>
 									<li>
 										<span class="icon major style5 fa-flag"></span>
-										<h3>Capture-the-Flag</h3>
+										<h3>Capture-the-Flag Challenges</h3>
 										<!-- <p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p> -->
 									</li>
 								</ul>
@@ -141,21 +142,9 @@
 									<h2>Numbers</h2>
 									<!-- <p>Hackathons, Programming Competitions, Capture-the-Flags — you name it!</p> -->
 								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon fa-code"></span>
-										<strong>6</strong> Hackathons
-									</li>
-									<li class="style2">
-										<span class="icon fa-trophy"></span>
-										<strong>6</strong> Awards
-									</li>
-									<li class="style3">
-										<span class="icon fa-folder"></span>
-										<strong>6</strong> Projects
-									</li>
-
-								</ul>
+								<section id="htmlContentContainer">
+	                    
+	               				</section>
 							</section>
 
 						<!-- Get Started -->
@@ -177,6 +166,15 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+		        if ('addEventListener' in window) {
+		            window.addEventListener('load', function() {
+		                document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+		            });
+		            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		        }
+		    </script>
+		    <script type="text/javascript" src="assets/js/nums.js"></script>
 
 	</body>
 </html>

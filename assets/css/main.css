@@ -16,6 +16,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		/*font-weight: bold;*/
 	}
 
 
@@ -1693,6 +1694,7 @@
 		text-decoration: none;
 		border-bottom: dotted 1px;
 		color: inherit;
+
 	}
 
 		a:hover {
@@ -1710,6 +1712,7 @@
 
 	p {
 		margin: 0 0 1em 0;
+		font-weight: 300;
 	}
 
 		p.content {
@@ -1730,8 +1733,18 @@
 	        text-align: center;
 	    }
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2 {
+		font-weight: 400;
+		/*font-weight: bold;*/
+		line-height: 1.5;
+		margin: 0 0 0.7em 0;
+		letter-spacing: -0.025em;
+	}
+
+
+	h3, h4, h5, h6 {
 		font-weight: 300;
+		/*font-weight: bold;*/
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
 		letter-spacing: -0.025em;
@@ -1753,6 +1766,7 @@
 
 	h3 {
 		font-size: 1.25em;
+
 	}
 
 	h4 {
@@ -3265,6 +3279,7 @@
 		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: center;
+		font-weight: bold;
 	}
 
 		#nav input, #nav select, #nav textarea {
@@ -3333,6 +3348,7 @@
 					border: 0;
 					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
+
 				}
 
 					#nav ul li a:hover {
@@ -3455,6 +3471,7 @@
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
+			font-weight: 400;
 			/*color: #636363 
 			color: #FFFFFF;!important;*/
 		}

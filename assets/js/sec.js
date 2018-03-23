@@ -33,9 +33,9 @@ function showInfo(data) {
 
 		htmlContent += '<p><b>'
 		+ ctfName[index]
-		+ ' '
+		+ ' ('
 		+ ctfDate[index]
-		+ '</p></b><h4>'
+		+ ')</p></b><h4>'
 		+ ctfDescription[index]
 		+ '</h4></p><br>';
 

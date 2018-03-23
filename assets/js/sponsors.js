@@ -33,9 +33,9 @@ function showInfo(data) {
 		// link = "";
 		// link = webURL[index];
 
-		htmlContent += '<h3><b>'
+		htmlContent += '<h2><b>'
 		+ sponsorName[index]
-		+ '</h3></b><h4>Sponsor since '
+		+ '</h2></b><h4>Sponsor since '
 		+ sponsorDate[index]
 		+ '</h4><p>'
 		+ sponsorDescription[index]

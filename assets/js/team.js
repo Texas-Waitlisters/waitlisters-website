@@ -45,23 +45,23 @@ function showInfo(data) {
 
 		htmlContent += '<span class="avatar"><img src="'
 		+ picURL[index]
-		+ '" style="length: 256px; width: 256px" alt="" /></span><h2>'
+		+ '" style="length: 256px; width: 256px" alt="" /></span><h2><b>'
 		+ memName[index]
-		+ '</h2><h3>'
+		+ '</b></h2><h3><b>'
 		+ memRole[index]
-		+ '</h3><p class="biography">'
+		+ '</b></h3><p class="biography">'
 		+ memBio[index]
 		+ '<ul><a href="'
 		+ gitURL[index] 
-		+ '" class="icon fa-github alt"></a><a href="'
+		+ '" class="icon fa-github alt" target="_blank"></a><a href="'
 		+ linkedInURL[index]
-		+ '" class="icon fa-linkedin alt"></a><a href="'
+		+ '" class="icon fa-linkedin alt" target="_blank"></a><a href="'
 		+ memEmail[index]
 		+ '" class="icon fa-envelope alt"></a><a href="'
 		+ resumeURL[index]
-		+ '" class="icon fa-file alt"></a><a href="'
+		+ '" class="icon fa-file alt" target="_blank"></a><a href="'
 		+ webURL[index]
-		+ '" class="icon fa-globe alt"></a></ul></p><br><br>';
+		+ '" class="icon fa-globe alt" target="_blank"></a></ul></p><br><br>';
 
 
 		index++;

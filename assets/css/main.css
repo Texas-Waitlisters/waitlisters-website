@@ -3379,6 +3379,7 @@
 			}
 
 				#nav.alt ul li a {
+					/*font-size: 0.9em;*/
 					font-size: 0.9em;
 				}
 
@@ -3388,6 +3389,7 @@
 
 			#nav {
 				display: none;
+				font-size: 0.9em;
 			}
 
 				#nav + #main {

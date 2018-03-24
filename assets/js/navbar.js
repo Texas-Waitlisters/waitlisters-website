@@ -1,22 +1,22 @@
 	// Use of this Script Requires the Tabletop.js Library. The Calling HTML File must include tabletop.js
 
 // Address of the Google Sheets Database
-var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1E4FiRe8tG_8qWenpKSUrWRVwLIjwQsocyG-wCrrN7tY/edit?usp=sharing';
+var public_spreadsheet_url_navbar = 'https://docs.google.com/spreadsheets/d/1E4FiRe8tG_8qWenpKSUrWRVwLIjwQsocyG-wCrrN7tY/edit?usp=sharing';
 
 function init() {
-Tabletop.init( { key: public_spreadsheet_url,
-                 callback: showInfo,
+Tabletop.init( { key: public_spreadsheet_url_navbar,
+                 callback: showInfoNav,
                  simpleSheet: true } );
 }
 
 window.addEventListener('DOMContentLoaded', init)	// Calls method init when Sheets has loaded
 
 // Method that gets called when data has been pulled from Google Sheets
-function showInfo(data) {
+function showInfoNav(data) {
 	var navItem = [];
 	var navURL = [];
 	var index = 0; // Line 2 is index 0 
-	var htmlContent = "";
+	var navbarContent = "";
 	//Builds the Forms and Addresses arrays using the Google Sheets Data
 	//  var[index] = data[index]<COL_NAME>
 	while (data[index] != null) {
@@ -26,10 +26,10 @@ function showInfo(data) {
 
 		// Writes HTML code based on Form responses
 		// alert(webURL[index] == undefined);
-		// link = "";
+		// link = ""
 		// link = webURL[index];
 
-		htmlContent += '<li><a href="'
+		navbarContent += '<li><a href="'
 		+ navURL[index]
 		+ '" class="active">'
 		+ navItem[index]
@@ -40,5 +40,5 @@ function showInfo(data) {
 		index++;
 
 	}
-	document.getElementById("navbarContainer").innerHTML = htmlContent;
+	document.getElementById("navbarContainer").innerHTML = navbarContent;
 }

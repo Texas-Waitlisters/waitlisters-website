@@ -5,19 +5,19 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1j0aY94Njvb
 
 function init() {
 Tabletop.init( { key: public_spreadsheet_url,
-                 callback: showInfo,
+                 callback: showInfoNums,
                  simpleSheet: true } );
 }
 
 window.addEventListener('DOMContentLoaded', init)	// Calls method init when Sheets has loaded
 
 // Method that gets called when data has been pulled from Google Sheets
-function showInfo(data) {
+function showInfoNums(data) {
 	var hackathonCt = [];
 	var awardsCt = [];
 	var projectsCt = [];
 	var index = 0; // Line 2 is index 0 
-	var htmlContent = "";
+	var navbarContent = "";
 	//Builds the Forms and Addresses arrays using the Google Sheets Data
 	//  var[index] = data[index]<COL_NAME>
 	while (data[index] != null) {
@@ -31,7 +31,7 @@ function showInfo(data) {
 		// link = "";
 		// link = webURL[index];
 
-		htmlContent += '<ul class="statistics"><li class="style1"><span class="icon fa-code"></span><strong>'
+		navbarContent += '<ul class="statistics"><li class="style1"><span class="icon fa-code"></span><strong>'
 		+ hackathonCt
 		+ '</strong> Hackathons</li><li class="style2"><span class="icon fa-trophy"></span><strong>'
 		+ awardsCt
@@ -43,5 +43,5 @@ function showInfo(data) {
 		index++;
 
 	}
-	document.getElementById("htmlContentContainer").innerHTML = htmlContent;
+	document.getElementById("htmlContentContainer").innerHTML = navbarContent;
 }

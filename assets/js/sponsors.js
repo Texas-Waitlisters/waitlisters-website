@@ -14,6 +14,7 @@ window.addEventListener('DOMContentLoaded', init)	// Calls method init when Shee
 // Method that gets called when data has been pulled from Google Sheets
 function showInfo(data) {
 	var sponsorName = [];
+	var sponsorLogo = [];
 	var sponsorDate = [];
 	var sponsorDescription = [];
 	var sponsorContact = [];
@@ -23,6 +24,7 @@ function showInfo(data) {
 	//  var[index] = data[index]<COL_NAME>
 	while (data[index] != null) {
 		sponsorName[index] = data[index].Sponsor_Name;
+		sponsorLogo[index] = data[index].Sponsor_Logo;
 		sponsorDate[index] = data[index].Sponsor_Date;
 		sponsorDescription[index] = data[index].Sponsor_Description;
 		sponsorContact[index] = data[index].Sponsor_Contact;
@@ -33,7 +35,9 @@ function showInfo(data) {
 		// link = "";
 		// link = webURL[index];
 
-		htmlContent += '<h2><b>'
+		htmlContent += '<span><img src="'
+		+ sponsorLogo[index]
+		+ '" style="length: 256px; width: 256px; background: rgba(255, 255, 255, .9); border-radius:10%; overflow:hidden; padding: 10px 10px 10px 10px;" alt="" /></span><h2><b>'
 		+ sponsorName[index]
 		+ '</h2></b><h4>Sponsor since '
 		+ sponsorDate[index]

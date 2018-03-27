@@ -2831,7 +2831,7 @@
 	}
 
 		table tbody tr:nth-child(2n + 1) {
-			background-color: rgba(255, 255, 255, 0.075);
+			/*background-color: rgba(255, 255, 255, 0.075);*/
 		}
 
 	table th {
@@ -3344,7 +3344,8 @@
 					display: inline-block;
 					height: 2.25em;
 					line-height: 2.25em;
-					padding: 0 1.25em;
+					padding: 0 1vw;
+					/*font-size: 2vw;*/
 					border: 0;
 					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
@@ -3368,7 +3369,7 @@
 			top: 0;
 			padding: 0.5em 1em;
 			/* NAVBAR BG COLOR ALT */
-			background-color: rgba(10, 10, 10, 0.95);
+			/*background-color: rgba(10, 10, 10, 0.95);*/
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
@@ -3376,6 +3377,7 @@
 
 			#nav.alt ul li {
 				margin: 0 0.175em;
+				/*margin: 0 0.175em;*/
 			}
 
 				#nav.alt ul li a {
@@ -3392,11 +3394,13 @@
 				font-size: 0.9em;
 			}
 
-				#nav + #main {
+				/*#nav + #main {
 					padding-top: 0;
-				}
+				}*/
 
-		}
+				
+
+		}	
 
 /* Main */
 
@@ -3654,7 +3658,7 @@
 		}
 
 			#main table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(222, 222, 222, 0.25);
+				/*background-color: rgba(222, 222, 222, 0.25);*/
 			}
 
 		#main table th {
@@ -3883,3 +3887,39 @@
 
 		}
 
+		.checkmark {
+			vertical-align: middle;
+			text-align: center;
+			font-weight: 500;
+		}
+
+		.left {
+			vertical-align: middle;
+			text-align: left;
+		}
+		.perk-yes {
+			background-color: white;
+		}
+		.compare-table td {
+			border-bottom:1px solid gray;
+			line-height: 1.2;
+		}
+		.compare-table td:not(.first-col) {
+			border-left:1px solid gray;
+		}
+
+		.member-type {
+			text-align: center;
+		}
+		.tiers {
+			font-weight: bold;
+		}
+		.chk-img {
+			width:1.5em;
+		}
+
+	.left {
+		vertical-align: middle;
+		text-align: left;
+		font-weight: 500;
+	}

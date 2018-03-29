@@ -3923,3 +3923,12 @@
 		text-align: left;
 		font-weight: 500;
 	}
+
+#news div {
+    text-decoration: underline;
+}
+
+#news div:hover {
+    color: #7fd2f5;
+    
+}

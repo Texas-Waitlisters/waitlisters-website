@@ -1927,9 +1927,9 @@
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
-		height: 2.75em;
-		line-height: 2.75em;
-		min-width: 9.25em;
+		height: 2.5em;
+		line-height: 2.25em;
+		min-width: 9.0em;
 		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
@@ -3483,6 +3483,7 @@
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
 			font-weight: 400;
+			margin-top: .5em;
 			/*color: #636363
 			color: #FFFFFF;!important;*/
 		}

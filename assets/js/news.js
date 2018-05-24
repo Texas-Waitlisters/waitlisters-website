@@ -18,8 +18,9 @@ function showInfo(data) {
 	var releaseDate = [];
 	var projFeat = [];
 	var newsURL = [];
-	var index = 0; // Line 2 is index 0 
-	var newsContent = "";
+	var index = 0; // Line 2 is index 0
+	// var newsContent = '';
+  var newsContent = '<div class="carouselbox active"><div class="buttons"><button class="prev"> ◀ <span class="offscreen">Previous</span></button><button class="next"><span class="offscreen">Next</span> ▶ </button></div><ol class="content">';
 	//Builds the Forms and Addresses arrays using the Google Sheets Data
 	//  var[index] = data[index]<COL_NAME>
 	while (data[index] != null) {
@@ -35,17 +36,30 @@ function showInfo(data) {
 		// link = "";
 		// link = webURL[index];
 
-		newsContent += '<a href="'
+    if (index == 0) {
+      newsContent += '<li class="current"><a href="'
+      + newsURL[index]
+  		+ '"><h3><strong>'
+  		+ newsOutletName[index] + ': </strong>'
+  		+ articleTitle[index] + '</h3></a><p>Featuring '
+  		+ projFeat[index] + ' <a href="'
+  		+ newsURL[index]
+  		+ '" class="icon fa-external-link" style="vertical-align: middle;"></a></p></li>';
+
+      index++;
+    }
+    else if (index > 0) {
+      newsContent += '<li><a href="'
 		+ newsURL[index]
 		+ '"><h3><strong>'
 		+ newsOutletName[index] + ': </strong>'
 		+ articleTitle[index] + '</h3></a><p>Featuring '
-		+ projFeat[index] + '<a href="'
+		+ projFeat[index] + ' <a href="'
 		+ newsURL[index]
-		+ '" class="icon fa-external-link alt"></a></p><br>';
-
-
-		index++;
+		+ '" class="icon fa-external-link" style="vertical-align: middle;"></a></p></li>';
+    index++
+    }
+    newsContent += '</ol></div>';
 
 	}
 	document.getElementById("newContentContainer").innerHTML = newsContent;

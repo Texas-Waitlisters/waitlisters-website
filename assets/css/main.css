@@ -3403,9 +3403,9 @@
 					#nav.alt ul li a {
 						font-size: 0.9em;
 					}
-				
 
-		}	
+
+		}
 
 /* Main */
 
@@ -3483,7 +3483,7 @@
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
 			font-weight: 400;
-			/*color: #636363 
+			/*color: #636363
 			color: #FFFFFF;!important;*/
 		}
 
@@ -3935,5 +3935,74 @@
 
 #news div:hover {
     color: #7fd2f5;
-    
+
+}
+
+/* CAROUSEL-NEW */
+.carouselbox {
+	font: inherit;
+	width: auto;
+	/* height: 50vh; */
+	position: relative;
+	margin: 3em;
+	/* border: 1px solid #ccc; */
+	/* box-shadow: 2px 2px 10px #ccc; */
+	overflow: hidden;
+}
+.content {
+	margin: 0;
+	padding: 0;
+}
+.content li {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	z-index: 10;
+}
+
+
+.active {
+	height: 200px;
+}
+.carouselbox button {
+	border: none;
+	visibility: hidden;
+}
+.active button {
+	visibility: visible;
+}
+.offscreen {
+	position: absolute;
+	left: -2000px;
+}
+
+.active .buttons {
+	padding: 145px 0;
+	background: #inherit;
+	text-align: center;
+	z-index: 10;
+	position: relative;
+}
+.active li a {
+	color: white;
+	text-decoration: none;
+}
+.active li {
+	position: absolute;
+	top: 20px;
+
+	pointer-events: none;
+	opacity: 0;
+	transform: scale(0);
+	transition: 1s;
+}
+.active li.current {
+	top: 20px;
+
+	pointer-events: auto;
+	opacity: 1;
+	transform: scale(1);
+	transition: 1s;
 }

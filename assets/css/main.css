@@ -3500,7 +3500,7 @@
 
 		#main .buttonProj {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 1px #dddddd;
+			/* box-shadow: inset 0 0 0 1px #dddddd; */
 			font-weight: 400;
 			margin-top: 40em;
 			padding: 1em 0 1em 0;
@@ -4024,7 +4024,7 @@
 	padding: 145px 0;
 	background: #inherit;
 	text-align: center;
-	z-index: 100;
+	z-index: 10;
 	position: relative;
 }
 .active li a {

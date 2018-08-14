@@ -2693,6 +2693,15 @@
 		border-top-color: rgba(255, 255, 255, 0.35);
 	}
 
+	ul.center {
+		width: 100% !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		text-align: center !important;
+		margin-bottom: 0em !important;
+		padding-left: 0 !important;
+	}
+
 	dl dt {
 		color: #ffffff;
 	}
@@ -4048,4 +4057,11 @@
 	transition: 1s;
 }
 
- */
+ .footer-icon {
+	 font-size: 2em;
+	 padding-left: .15em;
+	 padding-right: .15em;
+	 border-bottom: dotted 0px;
+	 margin: 0 0 0 0 !important;
+	 margin-bottom: 0em !important;
+ }

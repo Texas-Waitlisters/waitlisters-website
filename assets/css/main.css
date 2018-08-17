@@ -1631,10 +1631,11 @@
 		background-image: url("http://www.modafinilsale.com/data/out/23/233145015-backgrounds-stars.jpg"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("http://www.modafinilsale.com/data/out/23/233145015-backgrounds-stars.jpg"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("http://www.modafinilsale.com/data/out/23/233145015-backgrounds-stars.jpg"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);*/
-		background-image: url(images/specks.png), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url(images/specks.png), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url(images/specks.png), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url(images/specks.png), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+
+		background-image: -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -2452,6 +2453,11 @@
 		position: relative;
 	}
 
+		img.proj {
+			width: 100px;
+			height: 100px;
+		}
+
 		.image img {
 			border-radius: 8px;
 			display: block;
@@ -2500,7 +2506,7 @@
 		.projects {
 			length: 256px;
 			width: 256px;
-			background: rgba(255, 255, 255, .9);
+			background: rgba(255, 255, 255, 1);
 			border-radius: 10%;
 			/* overflow: hidden; */
 			padding: 10px 10px 10px 10px;
@@ -4065,4 +4071,17 @@
 	 border-bottom: dotted 0px;
 	 margin: 0 0 0 0 !important;
 	 margin-bottom: 0em !important;
+ }
+
+ h3.projectText {
+	 color: #101010 !important;
+	 font-weight: 600 !important;
+	 line-height: 1.5;
+	 margin: 0 0 0.7em 0;
+	 letter-spacing: -0.025em;
+	 font-size: 1.25em;
+ }
+
+ .projectText {
+	 color: #101010 !important;
  }

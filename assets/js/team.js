@@ -18,6 +18,7 @@ function showInfo(data) {
 	var memName = [];
   var memStat = [];
 	var memBio = [];
+  var memSince = [];
 	var memRole = [];
 	var gitURL = [];
 	var linkedInURL = [];
@@ -35,6 +36,7 @@ function showInfo(data) {
     memStat[index] = data[index].Member_Status;
 		memRole[index] = data[index].Member_Role;
 		memBio[index] = data[index].Member_Bio;
+    memSince[index] = data[index].Member_Since;
 		gitURL[index] = data[index].Github_URL;
 		linkedInURL[index] = data[index].LinkedIn_URL;
 		memEmail[index] = data[index].Member_Email;
@@ -49,14 +51,12 @@ function showInfo(data) {
     if (memStat[index] == ACTIVE) {
       activeContent += '<span class="avatar"><img src="'
       + picURL[index]
-      + '" style="length: 256px; width: 256px" alt="" /></span><h2><b>'
-      + memName[index]
-      + '</b></h2><h3><b>'
-      + memRole[index]
-      + '</b></h3><p class="biography">'
-      + memBio[index]
-      + '<ul><a href="'
-      + gitURL[index]
+      + '" style="length: 256px; width: 256px" alt="" /></span>'
+      + '<h2><b>' + memName[index] + '</b></h2>'
+      + '<h3><b>' + memRole[index] + '</b></h3>'
+      + '<p class="biography">' + memBio[index] + '</p>'
+      + '<p>Member Since: ' + memSince[index] + '</p>'
+      + '<ul><a href="' + gitURL[index]
       + '" class="icon fa-github alt" target="_blank"></a><a href="'
       + linkedInURL[index]
       + '" class="icon fa-linkedin alt" target="_blank"></a><a href="'
@@ -69,14 +69,12 @@ function showInfo(data) {
     } else {
       alumniContent += '<span class="avatar"><img src="'
       + picURL[index]
-      + '" style="length: 256px; width: 256px" alt="" /></span><h2><b>'
-      + memName[index]
-      + '</b></h2><h3><b>'
-      + memRole[index]
-      + '</b></h3><p class="biography">'
-      + memBio[index]
-      + '<ul><a href="'
-      + gitURL[index]
+      + '" style="length: 256px; width: 256px" alt="" /></span>'
+      + '<h2><b>' + memName[index] + '</b></h2>'
+      + '<h3><b>' + memRole[index] + '</b></h3>'
+      + '<p class="biography">' + memBio[index] + '</p>'
+      + '<p>Member Since: ' + memSince[index] + '</p>'
+      + '<ul><a href="' + gitURL[index]
       + '" class="icon fa-github alt" target="_blank"></a><a href="'
       + linkedInURL[index]
       + '" class="icon fa-linkedin alt" target="_blank"></a><a href="'

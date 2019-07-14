@@ -42,37 +42,41 @@ function showInfo(data) {
         + hackathonName[index]
         + '</h2></a>'
         + '<h3><b>Project(s)</b></h3><p>'
-        + projects[index] + ' ('
+        projectsContent += projects[index] + ' ('
         + developers[index] + ')</p>';
       if (awards[index].length > 0) {
-        htmlContent += '<h3><b>Awards </b></h3>'
+        awardsContent += '<h3><b>Awards </b></h3>'
         + '<p>' + awards[index] + ' (' + projects[index] + ')</p>';
       }
+        // htmlContent = htmlContent + projectsContent + awardsContent;
         // htmlContent += '<br><br>'
     // further rows
     } else if (index > 0) {
       if (hackathonName[index] != hackathonName[index-1]) {
+        projectsContent = "";
+        awardsContent = "";
         htmlContent += '<a href="'
           + hackathonURL[index] + '"><h2>'
           + hackathonName[index]
           + '</h2></a>'
-          + '<h3><b>Project(s)</b></h3><p>'
+          projectsContent += '<h3><b>Project(s)</b></h3><p>'
           + projects[index] + ' ('
           + developers[index] + ')</p>';
           if (awards[index].length > 0) {
-            htmlContent += '<h3><b>Awards </b></h3>'
+            awardsContent += '<h3><b>Awards </b></h3>'
             + '<p>' + awards[index] + ' (' + projects[index] + ')</p>';
           }
       } else if (hackathonName[index] == hackathonName[index-1]) {
-        htmlContent += '<p>' + projects[index] + ' ('
+        projectsContent += '<p>' + projects[index] + ' ('
           + developers[index] + ')</p>';
           if (awards[index].length > 0) {
-            htmlContent += '<p>' + awards[index] + ' (' + projects[index] + ')</p>';
+            awardsContent += '<p>' + awards[index] + ' (' + projects[index] + ')</p>';
           }
       }
+      // htmlContent = htmlContent + projectsContent + awardsContent;
       // htmlContent += '<br><br>'
     }
-
+htmlContent = htmlContent + projectsContent + awardsContent;
     // projectsContent = "";
     // awardsContent = "";
     htmlContent += '<br><br>'
